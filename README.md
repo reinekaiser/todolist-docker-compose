@@ -1,9 +1,5 @@
 # Todolist Docker Compose
 
-## Project Description
-
-This is a simple **Todolist application** built with a **Node.js backend**, a **React frontend**, and **MongoDB** as the database. The project is fully containerized using **Docker** and orchestrated with **Docker Compose** for easy setup and deployment.
-
 ## Features
 
 - Create, read, update, and delete tasks.
