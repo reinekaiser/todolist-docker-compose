@@ -1,4 +1,4 @@
-FROM node:18.9.1
+FROM node:lts-buster AS development
 
 WORKDIR /app
 

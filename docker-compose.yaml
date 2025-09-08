@@ -6,7 +6,7 @@ services:
     networks:
       - todolist-network
     environment:
-      MONGO_URI: mongodb+srv://quin:quin@cluster0.cdr4r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      MONGODB_URI: ${MONGODB_URI}
 
   frontend:
     build: ./todolist/frontend
@@ -15,7 +15,7 @@ services:
     networks:
       - todolist-network
     environment:
-      VITE_BACKEND_URL: http://backend:3000
+      VITE_BACKEND_URL: http://localhost:3000
 
 networks:
     todolist-network:

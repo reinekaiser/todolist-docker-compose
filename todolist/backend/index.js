@@ -5,7 +5,7 @@ import { connect } from "./config/db.js";
 import taskRoutes from "./routes/taskRoute.js";
 
 const port = process.env.PORT || 3000;
-dotenv.config({ path: process.cwd() + "/.env" });
+dotenv.config();
 
 const app = express();
 connect(app);
@@ -24,7 +24,7 @@ const corsOptions = {
         "Origin",
     ],
 };
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.get("/", (req, res) => {
     res.send("API is running...");
@@ -33,5 +33,5 @@ app.get("/", (req, res) => {
 app.use("/api/tasks", taskRoutes);
 
 app.listen(port, () => {
-    console.log(`🚀 Backend is running at http://localhost:${port}`);
+    console.log(`🚀 Backend is running on port ${port}`);
 });
