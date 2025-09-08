@@ -1,0 +1,12 @@
+node_modules/
+todolist/backend/node_modules/
+todolist/frontend/node_modules/
+
+.env
+todolist/backend/.env
+todolist/frontend/.env
+
+.DS_Store
+
+.vscode/
+.idea/
