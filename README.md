@@ -1,29 +1,26 @@
-# todolist-docker-compose
+# Todolist Docker Compose
 
-Project Description
+## Project Description
 
-This is a simple Todolist application built with a Node.js backend, a React frontend, and MongoDB as the database. The project is containerized using Docker and orchestrated with Docker Compose for easy setup and deployment.
+This is a simple **Todolist application** built with a **Node.js backend**, a **React frontend**, and **MongoDB** as the database. The project is fully containerized using **Docker** and orchestrated with **Docker Compose** for easy setup and deployment.
 
-Features
-	•	Create, read, update, and delete tasks.
-	•	Filter tasks by status (completed / not completed / all).
-	•	Responsive frontend interface built with React and Tailwind CSS.
-	•	RESTful API backend built with Node.js and Express.
-	•	Persistent data storage using MongoDB Atlas.
+## Features
 
-Docker Setup
+- Create, read, update, and delete tasks.
+- Filter tasks by status (completed / not completed / all).
+- Responsive frontend interface built with **React** and **Tailwind CSS**.
+- RESTful API backend built with **Node.js** and **Express**.
+- Persistent data storage using **MongoDB Atlas**.
 
-The project uses Docker Compose to run multiple services simultaneously:
-	1.	Backend: Runs the Node.js API on port 3000.
-	2.	Frontend: Runs the React app on port 5173.
-	3.	MongoDB: Stores all tasks data.
+## Docker Setup
 
-The docker-compose.yml file defines the services, their build context, ports, and network configuration, making it easy to launch the entire application with a single command:
+The project uses **Docker Compose** to run multiple services simultaneously:
 
-    docker compose up -d
+1. **Backend**: Runs the Node.js API on port `3000`.
+2. **Frontend**: Runs the React app on port `5173`.
+3. **MongoDB**: Stores all tasks data.
 
-Once the containers are up:
-	•	Frontend is accessible at http://localhost:5173
-	•	Backend API is accessible at http://localhost:3000
-This setup allows you to run the full application locally without installing Node.js or MongoDB separately.   
+The `docker-compose.yml` file defines the services, their build context, ports, and network configuration, making it easy to launch the entire application with a single command:
 
+```bash
+docker compose up -d
