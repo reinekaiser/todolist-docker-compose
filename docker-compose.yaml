@@ -16,9 +16,7 @@ services:
       - todolist-network
     environment:
       VITE_BACKEND_URL: http://backend:3000
-    depends_on:
-      - backend
 
-  networks:
+networks:
     todolist-network:
       driver: bridge
